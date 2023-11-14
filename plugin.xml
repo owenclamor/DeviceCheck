@@ -2,7 +2,7 @@
 <plugin id="cordova-plugin-devicecheck" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
     <name>DeviceCheck</name>
     <js-module name="DeviceCheck" src="www/DeviceCheck.js">
-        <clobbers target="cordova.plugin.devicecheck" />
+        <clobbers target="DeviceCheck" />
     </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
