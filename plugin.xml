@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-devicecheck" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>DeviceCheck</name>
+    <js-module name="DeviceCheck" src="www/DeviceCheck.js">
+        <clobbers target="cordova.plugin.devicecheck" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="DeviceCheck">
+                <param name="android-package" value="owen.dev.devicecheck.DeviceCheck" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/DeviceCheck.java" target-dir="src/cordova-plugin-devicecheck/DeviceCheck" />
+    </platform>
+</plugin>
