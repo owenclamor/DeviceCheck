@@ -158,6 +158,7 @@ public class DeviceCheck extends CordovaPlugin {
                 
             }
         }
+        callbackContext.success("true");
         return false;
     }
   }
