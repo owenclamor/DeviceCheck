@@ -17,7 +17,7 @@
 public class DeviceCheck extends CordovaPlugin {
   private static String GET_CPU = "getCPU";
   private static String GET_RAM = "getRAM";
-  private static String GET_DEVICENAME = "getDeviceName";
+  private static String GET_DEVICENAME = "getDevice";
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
