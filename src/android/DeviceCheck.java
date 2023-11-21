@@ -161,4 +161,15 @@ public class DeviceCheck extends CordovaPlugin {
         callbackContext.success("true");
         return false;
     }
+
+    public boolean getDeviceSDK(String test, CallbackContext callbackContext){
+      int sdkVersion = Build.Version.SDK_INT;
+
+      if (sdkVersion) {
+        callbackContext.success(sdkVersion);
+      }else{
+        callbackContext.error("Fail");
+      }
+      
+    }
   }
