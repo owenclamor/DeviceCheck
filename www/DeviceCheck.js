@@ -19,5 +19,8 @@ DeviceCheck.getRAM = function(arg0, onSuccess, onError){
 DeviceCheck.getDeviceName = function(arg0, onSuccess, onError){
   exec(onSuccess, onError, PLUGIN_NAME, "getDevice", [arg0]);
 }
+DeviceCheck.getDeviceSDK = function(arg0, onSuccess, onError){
+  exec(onSuccess, onError, PLUGIN_NAME, 'getDeviceSDK', [arg0]);
+}
 
 module.exports = DeviceCheck;
